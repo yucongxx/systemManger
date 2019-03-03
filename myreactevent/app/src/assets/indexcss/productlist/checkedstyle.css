@@ -1,0 +1,27 @@
+.productListViewMiddle input[type=checkbox] {
+  display: none;
+}
+
+.productListViewBottom input[type=checkbox] {
+  display: none;
+}
+
+.check-box {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border: 1px solid #b5b6b6;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type=checkbox]:checked+.check-box::after {
+  content: "\2714";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 1px;
+  color: #7c8383;
+}

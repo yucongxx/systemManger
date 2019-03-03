@@ -1,0 +1,377 @@
+ #productList {
+     /* padding: 50px 0 0 136px; */
+     background: #f9f9f9;
+     overflow-y: auto;
+ }
+
+ .pLTop {
+     height: 50px;
+     border-bottom: 1px solid #e4e4e4;
+ }
+
+ .pLTop a {
+     display: inline-block;
+     width: 78px;
+     height: 28px;
+     border: 1px solid #cccccc;
+     background: #fff;
+     font-size: 13px;
+     margin: 9px 0 0 1200px;
+ }
+
+ .pLTop a i {
+     margin-left: 12px;
+     color: #666666;
+ }
+
+ .pLTop a span {
+     margin-left: 8px;
+     line-height: 28px;
+     color: #666666;
+ }
+
+ .productFilter li {
+     float: left;
+     width: 120px;
+     height: 30px;
+     border: 1px solid #e4e4e4;
+     line-height: 30px;
+     text-align: center;
+     font-size: 14px;
+     cursor: pointer;
+     margin-right: 10px;
+     background: #fff;
+     border-radius: 3px;
+     margin-top: 20px;
+ }
+
+ .productFilter li:first-child {
+     margin-left: 142px;
+ }
+
+ .productFilter div {
+     color: #666666;
+ }
+
+ .productFilter span {
+     color: #f04844;
+ }
+
+ .productFilter li:hover div {
+     color: #fff;
+     background: #1abc9c;
+ }
+
+ .productFilter li:hover span {
+     color: #fff;
+ }
+
+ .productSearch {
+     width: 1098px;
+     height: 115px;
+     border: 1px solid #e4e4e4;
+     margin-top: 17px;
+     margin-left: 140px;
+ }
+
+ .productSearch .productSearchTop {
+     width: 100%;
+     height: 50px;
+     background: #f3f3f3;
+     border-bottom: 1px solid #e4e4e4;
+     line-height: 50px;
+ }
+
+ .productSearch .productSearchTop i {
+     font-size: 25px;
+     vertical-align: middle;
+     margin-left: 10px;
+ }
+
+ .productSearch .productSearchTop span {
+     font-size: 10px;
+     color: #666666;
+ }
+
+ .productSearchTop .searchResult {
+     float: right;
+     width: 80px;
+     height: 30px;
+     border: 1px solid #cccccc;
+     line-height: 30px;
+     text-align: center;
+     background: #fff;
+     margin: 10px 18px 0 0;
+     font-size: 12px;
+     color: #666666
+ }
+
+ .productSearchTop .searchResult:hover {
+     background: #f0ebeb;
+ }
+
+ .productSearch .productSearchMiddle {
+     height: 64px;
+     background: #fff;
+ }
+
+ .productSearch .productSearchMiddle li {
+     float: left;
+     line-height: 64px;
+ }
+
+ .productSearchMiddle li span {
+     font-size: 14px;
+     color: #666666;
+     margin-left: 40px;
+ }
+
+ .productSearchMiddle li input {
+     width: 180px;
+     height: 33px;
+     border: 1px solid #e4e4e4;
+     margin-left: 20px;
+     padding-left: 5px;
+     box-sizing: border-box;
+     color: #ccc;
+ }
+
+ .productSearchMiddle li input::-webkit-input-placeholder {
+     color: #cccccc;
+     font-weight: 500;
+     font-size: 14px;
+ }
+
+ .productSearchMiddle .brandSelect {
+     cursor: pointer;
+     /*清除select默认样式*/
+     border: 1px solid #e4e4e4;
+     width: 180px;
+     height: 33px;
+     /*ie下,原默认的箭头样式还是会显示，所以这里把自定义的样式给去除了*/
+     font-size: 13px;
+     color: #ccc;
+     outline: none;
+     margin-left: 20px;
+ }
+
+ .productListView {
+     width: 1098px;
+     /* border: 1px solid #e4e4e4; */
+     margin-top: 17px;
+     margin-left: 140px;
+ }
+
+ .productListView .productListViewTop {
+     width: 100%;
+     height: 50px;
+     background: #f3f3f3;
+     line-height: 50px;
+ }
+
+ .productListView .productListViewTop i {
+     font-size: 25px;
+     vertical-align: middle;
+     margin-left: 10px;
+ }
+
+ .productListView .productListViewTop span {
+     font-size: 10px;
+     color: #666666;
+ }
+
+ .productListView .changeInformation {
+     float: right;
+     width: 100px;
+     height: 30px;
+     border: 1px solid #cccccc;
+     line-height: 30px;
+     text-align: center;
+     background: #fff;
+     margin: 10px 27px 0 0;
+     font-size: 10px;
+     color: #666666
+ }
+
+ .productListView .changeInformation:hover {
+     background: #f0ebeb
+ }
+
+ .productListView .sortord {
+     float: right;
+     cursor: pointer;
+     border: 1px solid #e4e4e4;
+     width: 102px;
+     height: 32px;
+     /*ie下,原默认的箭头样式还是会显示，所以这里把自定义的样式给去除了*/
+     font-size: 13px;
+     color: #ccc;
+     outline: none;
+     margin: 10px 20px 0 0;
+     padding-left: 5px;
+ }
+
+ .productListViewMiddle table.dataTable {
+     width: 1099px;
+     font-family: verdana, arial, sans-serif;
+     color: #333333;
+     border: 1px solid #e4e4e4;
+     border-collapse: collapse;
+ }
+
+ .productListViewMiddle table.dataTable th {
+     font-size: 14px;
+     border-width: 1px;
+     padding: 10px;
+     border: 1px solid #e4e4e4;
+     border-top: none;
+     background-color: #f9fafc;
+     color: #666679;
+ }
+
+ .productListViewMiddle table.dataTable td {
+     text-align: center;
+     font-size: 12px;
+     border-width: 1px;
+     padding: 5px 0px;
+     border: 1px solid #e4e4e4;
+     background-color: #ffffff;
+     color: #666666;
+     height: 45px;
+ }
+
+ .productListViewMiddle table.dataTable td img {
+     width: 50px;
+     height: 50px;
+ }
+
+ .productListViewMiddle table.dataTable .proAudit a {
+     color: #1abc9c;
+ }
+
+ .productListViewMiddle table.dataTable .proAudit p {
+     margin-bottom: 5px;
+ }
+
+ .productListViewMiddle table.dataTable .proAudit a:hover {
+     border-bottom: 1px solid #1abc9c;
+ }
+
+ .productListViewMiddle table.dataTable .proOperation li {
+     margin-top: 5px;
+ }
+
+ .productListViewMiddle table.dataTable .proOperation a {
+     color: #1abc9c;
+ }
+
+ .productListViewMiddle table.dataTable .proOperation a:hover {
+     border-bottom: 1px solid #1abc9c;
+ }
+
+ .productListViewBottom {
+     width: 100%;
+     height: 55px;
+     background: #fff;
+     position: relative;
+     border-bottom: 1px solid #e4e4e4;
+     border-left: 1px solid #e4e4e4;
+     border-right: 1px solid #e4e4e4;
+ }
+
+ .productListViewBottom .check-all {
+     height: 10px;
+     width: 10px;
+     background-color: transparent;
+     border: 1px solid #b5b6b6;
+     border-radius: 2px;
+     /* display: inline-block; */
+     cursor: pointer;
+     position: relative;
+     margin: 25px 0 0 16px;
+     float: left;
+ }
+
+ .productListViewBottom input[type=checkbox]:checked+.check-all::after {
+     content: "\2714";
+     position: absolute;
+     top: -4px;
+     left: 0;
+     font-size: 1px;
+     color: #7c8383;
+ }
+
+ .productListViewBottom .productAll {
+     font-size: 14px;
+     color: #999999;
+     float: left;
+     margin-top: 20px;
+ }
+
+ div.mass {
+     float: left;
+     line-height: 56px;
+ }
+
+ .productListViewBottom .massOperation {
+     cursor: pointer;
+     border: 1px solid #e4e4e4;
+     width: 102px;
+     height: 32px;
+     font-size: 13px;
+     color: #ccc;
+     outline: none;
+     margin-left: 25px;
+     padding-left: 5px;
+ }
+
+ .productListViewBottom .confirmOperation {
+     display: inline-block;
+     width: 78px;
+     height: 30px;
+     border: 1px solid #cccccc;
+     line-height: 30px;
+     text-align: center;
+     background: #fff;
+     margin: 10px 0 0 10px;
+     font-size: 10px;
+     color: #666666;
+ }
+
+ .productListViewBottom .confirmOperation:hover {
+     background: #f0ebeb
+ }
+
+ .productListViewBottom .pageDescribe {
+     font-size: 13px;
+     margin-left: 330px;
+     line-height: 55px;
+     color: #666666;
+ }
+
+ .productListViewBottom .pageDescribe span {
+     color: red;
+ }
+
+ .productListViewBottom .skipPage {
+     color: #999999;
+     position: absolute;
+     right: 24px;
+     top: 18px;
+     font-size: 13px;
+ }
+
+ .productListViewBottom .skipPage input {
+     width: 33px;
+     height: 23px;
+     border: 1px solid #d7d7d7;
+     border-radius: 3px;
+     padding-left: 5px;
+     box-sizing: border-box;
+     color: #999999;
+ }
+
+ .productListViewBottom span {
+     margin-right: 5px;
+     margin-left: 5px;
+ }

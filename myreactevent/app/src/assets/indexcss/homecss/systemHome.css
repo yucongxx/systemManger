@@ -1,0 +1,459 @@
+/*
+    系统页面首页
+*/
+
+#mainContent {
+    /* padding: 50px 0 0 136px; */
+    background: #f9f9f9;
+    overflow-y: auto;
+    /* display:none */
+}
+
+#mainContent .mCTop {
+    height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#mainContent .mCTop a {
+    display: inline-block;
+    width: 78px;
+    height: 28px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    font-size: 13px;
+    margin: 9px 0 0 1200px;
+}
+
+#mainContent .mCTop a i {
+    margin-left: 12px;
+    color: #666666;
+}
+
+#mainContent .mCTop a span {
+    margin-left: 8px;
+    line-height: 28px;
+    color: #666666;
+}
+
+#mainContent .mCMiddle {
+    padding-left: 135px;
+    width: 1064px;
+}
+
+#mainContent .mCMiddle li {
+    position: relative;
+    padding-top: 26px;
+    float: left;
+    width: 246px;
+    height: 82px;
+    background: #fff;
+    margin-top: 21px;
+    border: 1px solid #e4e4e4;
+    /* border-radius: 3%; */
+}
+
+#mainContent .mCMiddle li:nth-child(2) {
+    margin-left: 23px;
+}
+
+#mainContent .mCMiddle li:nth-child(3) {
+    margin-left: 23px;
+}
+
+#mainContent .mCMiddle li:nth-child(4) {
+    margin-left: 24px;
+}
+
+#mainContent .mCMiddle i {
+    color: #1abc9c;
+    font-size: 51px;
+    margin-left: 18px;
+}
+
+#mainContent .mCMiddle span {
+    color: #999999;
+    position: absolute;
+    top: 30px;
+    left: 83px;
+}
+
+#mainContent .mCMiddle div {
+    color: #666666;
+    font-size: 20px;
+    position: absolute;
+    top: 55px;
+    left: 85px;
+}
+
+#mainContent .mCPending {
+    width: 1064px;
+    height: 185px;
+    margin-left: 135px;
+    margin-top: 21px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCPending>div {
+    width: 1044px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666
+}
+
+#mainContent .mCPending span {
+    display: inline-block;
+    width: 100px;
+}
+
+#mainContent .mCPending .firstCol li:first-child {
+    margin-top: 11px;
+}
+
+#mainContent .mCPending .firstCol {
+    float: left;
+    margin-top: 10px;
+}
+
+#mainContent .mCPending .firstCol li {
+    height: 39px;
+    line-height: 39px;
+    margin-left: 39px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#mainContent .mCPending .firstCol span:hover {
+    color: #1ABC9C;
+}
+
+#mainContent .mCPending .firstCol li span {
+    color: #666666;
+    font-size: 14px;
+}
+
+#mainContent .mCPending .firstCol li a span:nth-child(2) {
+    color: red
+}
+
+#mainContent .mCPending .firstCol li span:first-child {
+    margin-right: 100px;
+}
+
+#mainContent .mCEntry {
+    width: 1064px;
+    height: 199px;
+    margin-left: 135px;
+    margin-top: 21px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCEntry>div {
+    width: 1044px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666
+}
+
+#mainContent .mCEntry li {
+    width: 177px;
+    height: 151px;
+    float: left;
+    padding: 30px 56px;
+    box-sizing: border-box;
+    /* margin-right: 41px; */
+}
+
+#mainContent .mCEntry li:first-child {
+    /* margin-left: 20px; */
+}
+
+#mainContent .mCEntry i {
+    font-size: 45px;
+    color: #999999;
+    margin: 10px;
+}
+
+#mainContent .mCEntry li a div {
+    color: #999999;
+    margin-top: 10px;
+    /* margin-left: 5px; */
+}
+
+#mainContent .mCEntry li:hover {
+    background: #f3f3f3;
+}
+
+#mainContent .mCEntry li a div:hover {
+    color: #1abc9c;
+}
+
+#mainContent .mCProductView {
+    height: 199px;
+    margin-left: 135px;
+    margin-top: 21px;
+}
+
+#mainContent .mCProductViewL {
+    float: left;
+    width: 520px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCProductViewR {
+    float: left;
+    width: 520px;
+    height: 199px;
+    margin-left: 22px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCProductViewL div:nth-child(1) {
+    width: 501px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666;
+}
+
+#mainContent .mCProductViewR div:nth-child(1) {
+    width: 501px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.mCProductViewL li {
+    float: left;
+    width: 130px;
+    height: 150px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mCProductViewL li p:first-child {
+    font-size: 30px;
+    color: #f04844;
+}
+
+.mCProductViewL li p:last-child {
+    font-size: 14px;
+    color: #666666;
+}
+
+.mCProductViewR li {
+    float: left;
+    width: 130px;
+    height: 150px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mCProductViewR li p:first-child {
+    font-size: 30px;
+    color: #f04844;
+}
+
+.mCProductViewR li p:last-child {
+    font-size: 14px;
+    color: #666666;
+}
+
+#mainContent .mCOrder {
+    width: 1064px;
+    height: 340px;
+    margin-left: 135px;
+    margin-top: 21px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCOrder .mCTitle {
+    width: 1044px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666
+}
+
+#mainContent .mCOrderL {
+    width: 146px;
+    border-right: 1px solid #e4e4e4;
+    height: 85%;
+    float: left;
+}
+
+#mainContent .mCOrderL li {
+    padding-left: 24px;
+    padding-top: 100px
+}
+
+#mainContent .mCOrderL p:first-child {
+    font-size: 10px;
+    color: #989898;
+}
+
+#mainContent .mCOrderL p:nth-child(2) {
+    font-size: 25px;
+    color: #666666;
+}
+
+#mainContent .mCOrderL span {
+    font-size: 10px;
+    color: #cfdbdb;
+}
+
+#mainContent .mCOrderL span {
+    color: #cfdbdb;
+}
+
+#mainContent .mCOrderL .upColor {
+    color: #00a950
+}
+
+#mainContent .mCOrderL .DeclineColor {
+    color: #f04844
+}
+
+#mainContent .mCOrderL span:last-child {
+    margin-left: 8px;
+}
+
+#mainContent .mCOrderL li .triangleUp {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color: transparent transparent #00a950 transparent;
+}
+
+#mainContent .mCOrderL li .triangleDecline {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color: #f04844 transparent transparent transparent;
+}
+
+#ChartStatistics {
+    float: left;
+    width: 86%;
+    height: 290px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+#mainContent .mCMarket {
+    width: 1064px;
+    height: 318px;
+    margin-left: 135px;
+    margin-top: 21px;
+    border: 1px solid #e4e4e4;
+    background: #fff
+}
+
+#mainContent .mCMarket .mCTitleM {
+    width: 1044px;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    padding-left: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666666
+}
+
+#mainContent .mCMarketL {
+    width: 146px;
+    border-right: 1px solid #e4e4e4;
+    height: 85%;
+    float: left;
+}
+
+#mainContent .mCMarketL li {
+    padding-top: 30px;
+    padding-left: 24px;
+}
+
+#mainContent .mCMarketL p:first-child {
+    font-size: 10px;
+    color: #989898;
+}
+
+#mainContent .mCMarketL p:nth-child(2) {
+    font-size: 25px;
+    color: #666666;
+}
+
+#mainContent .mCMarketL span {
+    font-size: 10px;
+    color: #cfdbdb;
+}
+
+#mainContent .mCMarketL span {
+    color: #cfdbdb;
+}
+
+#mainContent .mCMarketL .upColorM {
+    color: #00a950
+}
+
+#mainContent .mCMarketL .DeclineColorM {
+    color: #f04844
+}
+
+#mainContent .mCMarketL span:last-child {
+    margin-left: 8px;
+}
+
+#mainContent .mCMarketL li .triangleUpM {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color: transparent transparent #00a950 transparent;
+}
+
+#mainContent .mCMarketL li .triangleDeclineM {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color: #f04844 transparent transparent transparent;
+}
+
+#ChartMarket {
+    float: left;
+    width: 86%;
+    height: 256px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}

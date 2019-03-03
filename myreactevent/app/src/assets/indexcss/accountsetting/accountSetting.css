@@ -1,0 +1,125 @@
+#contentSetting {
+    /* padding: 50px 0 0 136px; */
+    background: #f9f9f9;
+    overflow-y: auto;
+}
+
+#contentSetting .cSTop {
+    height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#contentSetting .cSTop a {
+    display: inline-block;
+    width: 78px;
+    height: 28px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    font-size: 13px;
+    margin: 9px 0 0 1200px;
+}
+
+#contentSetting .cSTop a i {
+    margin-left: 12px;
+    color: #666666;
+}
+
+#contentSetting .cSTop a span {
+    margin-left: 8px;
+    line-height: 28px;
+    color: #666666;
+}
+
+#contentSetting .settingView {
+    width: 1098px;
+    height: 646px;
+    border: 1px solid #e4e4e4;
+    margin: 20px auto;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#contentSetting .settingView .settingTop {
+    box-sizing: border-box;
+    padding-left: 15px;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    background: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    font-size: 13px;
+    color: #666666;
+}
+
+#contentSetting .settingView .settingMiddle {
+    position: absolute;
+    top: 88px;
+    left: 503px;
+}
+
+#contentSetting .settingView i {
+    font-size: 100px;
+    color: #cccccc;
+    margin-top: 30px;
+}
+
+#contentSetting .settingView p {
+    font-size: 10px;
+    color: #1abc9c;
+    text-align: center;
+    width: 100px;
+}
+
+#contentSetting .settingForm {
+    text-align: right;
+    position: absolute;
+    top: 215px;
+    left: 380px;
+}
+
+#contentSetting .settingForm span {
+    font-size: 13px;
+    color: #666666
+}
+
+.settingForm input {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 238px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #999999;
+    padding-left: 5px;
+    box-sizing: border-box
+}
+
+#contentSetting .settingView .settingForm a {
+    display: block;
+    width: 81px;
+    height: 35px;
+    background: #16A085;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    margin: 50px 0 0 150px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#contentSetting .settingView .settingForm a:hover {
+    background: #1ABC9C;
+}
+
+.slogan {
+    color: #cccccc;
+    text-align: center;
+    font-size: 10px;
+    margin: 40px;
+}
+
+#contentSetting .verFail {
+    border: 1px solid red;
+}

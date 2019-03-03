@@ -1,0 +1,159 @@
+body {
+    background: url(../images/bg.jpg) no-repeat;
+    /* color: #fff; */
+    /* font-family: "微软雅黑"; */
+}
+
+.loginContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginTop {
+    text-align: center;
+}
+
+.loginTop h2 {
+    margin-top: 5px;
+    font-size: 28px;
+    color: #fff
+}
+
+.loginContent i {
+    font-size: 85px;
+    color: #fff
+}
+
+.username {
+    margin-top: 40px;
+}
+
+.password {
+    margin-top: 18px;
+}
+
+.login_username {
+    background: url(../images/用户名.png) no-repeat 0 0;
+    background-size: 30px 30px;
+    background-position: 10px center;
+    width: 300px;
+    height: 50px;
+    padding-left: 49px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* caret-color: #fff; */
+    color: #fff;
+}
+
+.login_password {
+    background: url(../images/密码.png) no-repeat 0 0;
+    background-position: 10px center;
+    background-size: 30px 30px;
+    width: 300px;
+    height: 50px;
+    padding-left: 49px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* background-color: #9ecbea; */
+    caret-color: #fff;
+    color: #fff
+}
+
+.username i {
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 271px;
+    top: 153px;
+    display: none
+}
+
+.password i {
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 271px;
+    top: 223px;
+    display: none
+}
+
+.remember {
+    margin-top: 5px;
+}
+
+.remember input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.remember span {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #fff
+}
+
+.remember .login-continue input[type=checkbox]:checked {
+    background: url("../images/勾.png")no-repeat center;
+    background-size: 15px 15px;
+}
+
+.loginContent .login {
+    position: absolute;
+    top: 320px;
+    left: 0;
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: #3691cf;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.loginContent .login:hover {
+    background: #439edc;
+}
+
+.loginContent .noticeF {
+    width: 305px;
+    height: 45px;
+}
+
+.loginContent .notice {
+    position: absolute;
+    top: 395px;
+    left: 0;
+    width: 300px;
+    height: 40px;
+    background: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+
+.loginContent .notice i {
+    font-size: 14px;
+    margin-right: 5px;
+}

@@ -1,0 +1,248 @@
+#addProduct {
+    /* padding: 50px 0 0 136px; */
+    background: #f9f9f9;
+    overflow-y: auto;
+    /* z-index: -2; */
+}
+
+.aPList {
+    width: 1100px;
+    height: 160%;
+    border: 1px solid #e4e4e4;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.aPListL {
+    width: 16%;
+    height: 100%;
+    border-right: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    float: left;
+    display: none;
+}
+
+.aPClassify {
+    width: 101%;
+    height: 50px;
+    background: #9ea7b4;
+    box-sizing: border-box;
+    line-height: 50px;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.aPClassify i {
+    color: #fff;
+    font-size: 17px;
+}
+
+.aPClassify span {
+    color: #fff;
+}
+
+.aPListContent {
+    float: left;
+    width: 84%;
+    height: 80%;
+    background: #fff;
+    position: relative;
+    display: none;
+}
+
+.aPListContent .square {
+    width: 5px;
+    height: 50px;
+    background: #9ea7b4;
+    position: absolute;
+    top: 50px;
+    left: 0
+}
+
+.aPListContent .triangleClassify {
+    width: 0;
+    height: 0;
+    border-left: 13px solid #9ea7b4;
+    border-top: 27px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+
+.aPListL2 {
+    width: 16%;
+    height: 100%;
+    border-right: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    float: left;
+}
+
+.aPListL2 .aPClassify:first-child {
+    margin-bottom: 350px;
+}
+
+.aPListL2 .aPClassify:nth-child(2) {
+    margin-bottom: 143px;
+}
+
+.aPListContentStep2 {
+    float: left;
+    width: 84%;
+    /* height: 80%; */
+    background: #fff;
+    position: relative;
+}
+
+.aPListContentStep2 .square {
+    width: 5px;
+    height: 50px;
+    background: #9ea7b4;
+    position: absolute;
+    top: 50px;
+    left: 0
+}
+
+.aPListContentStep2 .triangleClassify {
+    width: 0;
+    height: 0;
+    border-left: 13px solid #9ea7b4;
+    border-top: 27px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+
+.addInformation {
+    margin-left: 127px;
+    margin-top: 50px;
+}
+.addInformation div:nth-child(8){
+    margin-top:45px;
+}
+
+.addInformation label, .addInformation span {
+    font-size: 10px;
+    color: #666666;
+    display: inline-block;
+    width: 60px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.addInformation span {
+    margin-top: 10px;
+    vertical-align: top
+}
+
+.addInformation input[type=text] {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 238px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding-left: 5px;
+    color: #999;
+}
+
+
+
+.addInformation textarea {
+    margin: 10px 0 42px 10px;
+    width: 340px;
+    height: 180px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding-top: 9px;
+    padding-left: 5px;
+    resize: none;
+    color:#999;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+
+.aPListContentStep2 .square1 {
+    width: 5px;
+    height: 50px;
+    background: #9ea7b4;
+    position: absolute;
+    top: 450px;
+    left: 0
+}
+
+.aPListContentStep2 .triangleClassify1 {
+    width: 0;
+    height: 0;
+    border-left: 13px solid #9ea7b4;
+    border-top: 27px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-radius: 3px;
+    position: absolute;
+    top: 450px;
+    left: 5px;
+}
+
+.aPListContentStep2 .square2 {
+    width: 5px;
+    height: 50px;
+    background: #9ea7b4;
+    position: absolute;
+    top: 643px;
+    left: 0
+}
+
+.aPListContentStep2 .triangleClassify2 {
+    width: 0;
+    height: 0;
+    border-left: 13px solid #9ea7b4;
+    border-top: 27px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-radius: 3px;
+    position: absolute;
+    top: 643px;
+    left: 5px;
+}
+
+.marketPrice {
+    margin-bottom: 42px;
+}
+
+.addInformation .productPut {
+    margin-top: 13px;
+}
+
+.aPListBottom2 {
+    height: 17%;
+    float: left;
+    width: 832px;
+    margin: 0 auto;
+    border-top: 1px solid #f1f1f1;
+    margin-left: 52px;
+    line-height: 200px;
+}
+
+.aPListBottom2 .submitInfo {
+    display: inline-block;
+    width: 170px;
+    height: 36px;
+    background: #1abc9c;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 260px;
+}
+
+.aPListBottom2 .submitInfo:hover {
+    background: #3fe0c0;
+}

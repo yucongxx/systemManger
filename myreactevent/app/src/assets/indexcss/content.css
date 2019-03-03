@@ -1,0 +1,85 @@
+#contentLeftClass {
+    padding-top: 10px;
+    background: #464c5b;
+    text-align: center;
+    position: relative;
+}
+
+#contentLeftClass li {
+    margin-bottom: 25px;
+}
+
+#contentLeftClass i {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+#contentLeftClass div {
+    font-size: 14px;
+    color: #fff;
+}
+
+#contentLeftClass .triangle {
+    position: absolute;
+    top: 25px;
+    left: 72%;
+    width: 0px;
+    height: 0px;
+    border: 9px solid;
+    border-color: transparent #eaedf1 transparent transparent;
+}
+
+#contentLeftClass .triangleD {
+    position: absolute;
+    top: 90px;
+    left: 72%;
+    width: 0px;
+    height: 0px;
+    border: 9px solid;
+    border-color: transparent #eaedf1 transparent transparent;
+}
+
+#contentMenu {
+    height: 100%;
+    background: #eaedf1;
+    color: #666666;
+    font-size: 14px;
+}
+
+#contentMenu .cTitle {
+    background: #f2f2f2;
+    color: #999999;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    /* border-bottom: 1px solid rgb(170, 163, 163); */
+}
+
+#contentMenu li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.system a {
+    color: #666666;
+}
+
+.system li span {
+    margin-left: 25px;
+    font-size: 5px;
+}
+
+#contentMenu span:hover {
+    color: #1ABC9C;
+}
+
+#contentMenu .contentMActive {
+    color: #1ABC9C;
+    background: #fff;
+}
+
+#contentMenu .contentMActive a {
+    color: #1ABC9C;
+    background: #fff;
+}
