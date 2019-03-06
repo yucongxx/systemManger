@@ -19,14 +19,14 @@ class HomeSystem extends Component {
         this.state = {
         }
     };
-    componentDidMount(){
-        let { everydaydata}=this.props;
-        everydaydata()
+    componentDidMount() {
+        let { everydaydata } = this.props;
+        everydaydata();
     };
     render() {
-        console.log(this.props);
-        let { orderlist: { thisWeekAmount, oneweekOrder}}=this.props;
-        let proportion = oneweekOrder.length / thisWeekAmount;
+        let { orderlist: { propotion, thisWeekAmount } } = this.props;
+        if (isNaN(propotion)) propotion = 0;
+        // console.log(propotion);
         return (
             // 1.系统首页开始
             <div id="mainContent">
@@ -53,7 +53,7 @@ class HomeSystem extends Component {
                                 <p>本周订单数量</p>
                                 <p>{thisWeekAmount}</p>
                                 <span>占近7天订单</span>
-                                <span className="DeclineColor">{parseInt(proportion)+'%'}</span>
+                                <span className="DeclineColor">{(propotion) * 100 + '%'}</span>
                             </li>
                         </ul>
                     </div>

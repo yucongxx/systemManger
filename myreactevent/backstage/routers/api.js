@@ -95,12 +95,6 @@ router.post('/user/register', (req, res, next) => {
         res.json(resData);
         return;
     }
-    // let user = new User({
-    //   username: username,
-    //   password: password
-    // });
-    // user.save().then(function (newUserInfo) {
-
     console.log(username, '这个就是前端传的name')
     User.findOne({
         username: username

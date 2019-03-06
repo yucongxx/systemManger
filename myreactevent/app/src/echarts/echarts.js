@@ -15,13 +15,15 @@ class EchartsTest extends Component {
         let { orderData, everydaydata } = this.props;
         await orderData();
         await everydaydata();
-        console.log(this.props);
+        // console.log(this.props);
         let dataArr = [];
         let { orderlist: { everyDayInOneWData } } = this.props;
         everyDayInOneWData.forEach(e => {
             dataArr.push(e.amountArr.length);
+            // dateArr.push(e.amountArr.length)
+            
         })
-        console.log(dataArr);
+        // console.log(dataArr);
         let myChart = echarts.init(document.getElementById('ChartStatistics'));
         // 绘制图表
         myChart.setOption({

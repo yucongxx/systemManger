@@ -161,12 +161,12 @@ function productlist(state = obj, action) {
         case types.PRODUCTDATA:
             let { data: data5 } = action;
             let newState10 = JSON.parse(JSON.stringify(state));
-            console.log(data5.data);
+            // console.log(data5.data);
             newState10.produData.put = data5.data.filter(e => e.pPut);
             newState10.produData.newPro = data5.data.filter(e => e.newPro);
             newState10.produData.inventory = data5.data.filter(e => e.pInventory <= 10);
             newState10.produData.productAll = data5.data;
-            console.log(newState10.produData);
+            // console.log(newState10.produData);
             return newState10;
         default:
             return state

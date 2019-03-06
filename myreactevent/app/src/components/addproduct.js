@@ -24,18 +24,19 @@ class AddProduct extends Component {
         this.arr = informationArr;
     };
     addPro = () => {
-        let { addgoods,location:{pathname}} = this.props;
+        let { addgoods,location:{pathname},init} = this.props;
         if (pathname ==='/home/addproduct'){
             console.log(1)
             let arrTest = this.arr && this.arr.filter(e => e.type !== 'checkbox')
             let test = arrTest && arrTest.every(e => e.value);
             if (test) {
                 addgoods();
-                // this.props.history.push('/home/productlist');
-                // this.forceUpdate();
+                this.props.history.push('/home/productlist');
+                init('/home/productlist');
+            }else{
+                alert('请填写相应的商品信息');
             }
         } else if (pathname ==='/home/modifyproduct'){
-            console.log(2);
             let { submiteditinfo}=this.props;
             submiteditinfo();
         }

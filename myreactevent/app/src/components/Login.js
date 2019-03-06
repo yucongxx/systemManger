@@ -60,6 +60,8 @@ class Login extends Component {
                 break;
             case 'hour':
                 d.setHours(d.getHours() + time);
+            default:
+                break;
         };
         document.cookie = key + '=' + val + (obj.time ? '; expires=' + d : '');
     };
@@ -90,7 +92,6 @@ class Login extends Component {
                 }).toString()
             });
             let d = await data.json();
-            console.log(d);
             if (d.code === 0) {
                 console.log('登陆成功');
                 let { noticeIn, onOff } = this.state;
@@ -132,6 +133,43 @@ class Login extends Component {
         console.log(onOff);
         this.setState({ onOff });
     };
+    register = async () => {
+        let { username, password, noticeIn } = this.state;
+        const register = document.querySelector('.register');
+        if (username && password) {
+            let data = await fetch('http://localhost:88/api/user/register', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    username,
+                    password
+                }).toString()
+            });
+            let d = await data.json();
+            console.log(d);
+            if (d.code === 0) {
+                noticeIn = ['注册成功，请登录'];
+                this.setState({ noticeIn })
+            } else if (d.code === 1) {
+                noticeIn = ['用户名已被占用'];
+                this.setState({ noticeIn }, () => {
+                    this.shake(register, 'top', 2)
+                })
+            }
+        } else if (!username) {
+            noticeIn = ['请填写用户账号'];
+            this.setState({ noticeIn }, () => {
+                this.shake(register, 'top', 2)
+            })
+        } else if (!password) {
+            noticeIn = ['请填写登录密码']
+            this.setState({ noticeIn }, () => {
+                this.shake(register, 'top', 2)
+            })
+        }
+    }
     componentWillMount() {
         console.log(this.getCookie('user'));
         if (this.getCookie('user')) {
@@ -187,6 +225,11 @@ class Login extends Component {
                         className="login"
                         onClick={this.login}
                     >登 录</a>
+                    <a
+                        href="javascript:;"
+                        className="register"
+                        onClick={this.register}
+                    >注 册</a>
                 </div>
                 {noticeFrame}
             </div>

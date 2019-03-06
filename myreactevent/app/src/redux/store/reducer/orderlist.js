@@ -74,7 +74,8 @@ const obj = {
             name: '待删除商品',
             amountArr: []
         }
-    ]
+    ],
+    propotion: 0
 }
 
 
@@ -109,7 +110,7 @@ function orderlist(state = obj, action) {
                         e.oOrderStatus = statecode
                     } else if (e.id === id1 && e.oOrderStatus === 0) {
                         e.oOrderStatus = statecode
-                    } 
+                    }
                 })
             }
             return newState4;
@@ -131,12 +132,12 @@ function orderlist(state = obj, action) {
                 }
             } else {
                 for (let i = 1; i <= newState5.page; i++) {
-                    
+
                     pagationArr.push(i)
                 }
             }
             newState5.PageArr = pagationArr;
-            
+
             return newState5;
         case types.ORDERALL:
             let { ev } = action;
@@ -208,10 +209,11 @@ function orderlist(state = obj, action) {
             let newState10 = JSON.parse(JSON.stringify(state));
             let { everyDayInOneWData, oneweekOrder } = newState10;
             let mondaydata = 0;
-            if (new Date().getDay() === 1) {
-                mondaydata = new Date().setHours(0, 0, 0, 0);
-                // console.log(mondaydata);
-            }
+            function getFirstDayOfWeek(date) {
+                var day = date.getDay() || 7;
+                return +new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1 - day);
+            };
+            mondaydata = getFirstDayOfWeek(new Date());
             for (let i = 0; i < everyDayInOneWData.length; i++) {
                 everyDayInOneWData[i].amountArr = oneweekOrder.filter(e => {
                     if (+new Date(e.time) > mondaydata) {
@@ -222,9 +224,10 @@ function orderlist(state = obj, action) {
             everyDayInOneWData.push(everyDayInOneWData.shift());
             let thisWeekOrder = everyDayInOneWData.reduce((prev, next) => {
                 return prev + next.amountArr.length
-            },0)
+            }, 0);
             newState10.thisWeekAmount = thisWeekOrder;
-            // console.log(everyDayInOneWData);
+            let onweekaaa = newState10.oneweekOrder.length;
+            newState10.propotion = (thisWeekOrder / onweekaaa).toFixed(2);
             return newState10;
         default:
             return state;

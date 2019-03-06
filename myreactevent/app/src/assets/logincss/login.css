@@ -38,7 +38,7 @@ body {
     background: url(../images/用户名.png) no-repeat 0 0;
     background-size: 30px 30px;
     background-position: 10px center;
-    width: 300px;
+    width: 305px;
     height: 50px;
     padding-left: 49px;
     padding-top: 10px;
@@ -54,7 +54,7 @@ body {
     background: url(../images/密码.png) no-repeat 0 0;
     background-position: 10px center;
     background-size: 30px 30px;
-    width: 300px;
+    width: 305px;
     height: 50px;
     padding-left: 49px;
     padding-top: 10px;
@@ -115,9 +115,26 @@ body {
 .loginContent .login {
     position: absolute;
     top: 320px;
-    left: 0;
+    left: 155px;
     display: block;
-    width: 300px;
+    width: 150px;
+    height: 50px;
+    background: #3691cf;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.loginContent .register {
+    position: absolute;
+    top: 320px;
+    left: -5px;
+    display: block;
+    width: 150px;
     height: 50px;
     background: #3691cf;
     color: #fff;
@@ -133,6 +150,10 @@ body {
     background: #439edc;
 }
 
+.loginContent .register:hover {
+    background: #439edc;
+}
+
 .loginContent .noticeF {
     width: 305px;
     height: 45px;
@@ -140,9 +161,9 @@ body {
 
 .loginContent .notice {
     position: absolute;
-    top: 395px;
-    left: 0;
-    width: 300px;
+    top: 390px;
+    left: -5px;
+    width: 310px;
     height: 40px;
     background: rgba(128, 128, 128, 0.4);
     border-radius: 5px;

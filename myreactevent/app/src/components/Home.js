@@ -150,11 +150,12 @@ class Home extends Component {
     };
     homePage = () => {
         this.props.history.push('/home/homesystem');
-        let { contentCheckedId, checkedId, checkedMenuId } = this.state;
+        let { contentCheckedId, checkedId, checkedMenuId,triangle } = this.state;
         checkedId = 1;
         checkedMenuId = 11;
         contentCheckedId = 111;
-        this.setState({ checkedId, contentCheckedId, checkedMenuId });
+        triangle = true;
+        this.setState({ checkedId, contentCheckedId, checkedMenuId, triangle });
     };
     orderpage = () => {
         this.props.history.push('/home/orderlist');

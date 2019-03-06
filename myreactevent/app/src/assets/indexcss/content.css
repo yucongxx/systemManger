@@ -43,7 +43,7 @@
     height: 100%;
     background: #eaedf1;
     color: #666666;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #contentMenu .cTitle {
@@ -67,7 +67,7 @@
 
 .system li span {
     margin-left: 25px;
-    font-size: 5px;
+    font-size: 13px;
 }
 
 #contentMenu span:hover {

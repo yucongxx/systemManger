@@ -12,7 +12,7 @@ class OrderView extends Component {
         await orderData();
     };
     render() {
-        console.log(this.props);
+        // console.log(this.props);
         let { orderlist: { orderData, oneweekOrder, pendingshowsecond,orderTotal } } = this.props;
         return (
             <div className="mCProductViewR ">
